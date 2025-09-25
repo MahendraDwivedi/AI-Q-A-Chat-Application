@@ -5,15 +5,16 @@
 .pub-cache/
 .flutter-plugins
 .flutter-plugins-dependencies
-.flutter-plugins-dependencies
 .idea/
 *.iml
 *.log
 
-# # Keep other build files ignored, but allow web build
-# !build/web
-# # Flutter build outputs
-# build/
+# Flutter build outputs
+build/
+
+# Keep web build (so we can deploy on Render)
+!build/web
+
 ios/Flutter/Flutter.framework
 ios/Flutter/Flutter.podspec
 ios/Pods/
@@ -22,23 +23,17 @@ android/.gradle/
 android/build/
 *.lock
 
-
-
-
 # VSCode
 .vscode/
-
 
 # Environment files
 .env
 *.env
 
-
 # MacOS / Linux
 .DS_Store
 *.swp
 *~
-
 
 # Python
 __pycache__/
@@ -58,4 +53,3 @@ ENV/
 
 # OS
 .DS_Store
-
