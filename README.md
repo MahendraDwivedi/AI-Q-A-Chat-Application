@@ -81,6 +81,8 @@ pip install -r requirements.txt
 fastapi
 uvicorn
 google-generativeai
+python-dotenv
+google-genai
 ```
 
 4. Set your **Google Gemini API key** as an environment variable:
