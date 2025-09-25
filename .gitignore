@@ -10,10 +10,10 @@
 *.iml
 *.log
 
-# Keep other build files ignored, but allow web build
-!build/web
-# Flutter build outputs
-build/
+# # Keep other build files ignored, but allow web build
+# !build/web
+# # Flutter build outputs
+# build/
 ios/Flutter/Flutter.framework
 ios/Flutter/Flutter.podspec
 ios/Pods/
