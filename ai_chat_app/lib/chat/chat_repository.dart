@@ -10,12 +10,13 @@ class ChatRepository {
   Stream<String> streamChat(List<Message> messages) async* {
     try {
       final response = await dio.post(
-  'http://localhost:8000/gemini-chat',   // ✅ fix here
-  data: {'messages': messages.map((m) => m.toJson()).toList()},
-  options: Options(
-    responseType: ResponseType.plain,
-  ),
-);
+        'http://localhost:8000/chat',
+        data: {'messages': messages.map((m) => m.toJson()).toList()},
+        options: Options(
+          responseType: ResponseType.plain, // Use plain for web compatibility
+        ),
+      );
+
       // Split the response by chunks (simulate streaming)
       final fullResponse = response.data.toString();
       for (var chunk in fullResponse.split(RegExp(r'(?<=\n)'))) {
