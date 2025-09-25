@@ -10,7 +10,8 @@
 *.iml
 *.log
 
-
+# Keep other build files ignored, but allow web build
+!build/web
 # Flutter build outputs
 build/
 ios/Flutter/Flutter.framework
@@ -20,8 +21,7 @@ ios/Runner.xcworkspace/
 android/.gradle/
 android/build/
 *.lock
-# Keep other build files ignored, but allow web build
-!build/web
+
 
 
 
