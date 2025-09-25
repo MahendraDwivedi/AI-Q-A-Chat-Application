@@ -1,0 +1,58 @@
+# Flutter / Dart
+.dart_tool/
+.buildlog/
+.packages
+.pub-cache/
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter-plugins-dependencies
+.idea/
+*.iml
+*.log
+
+
+# Flutter build outputs
+build/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Pods/
+ios/Runner.xcworkspace/
+android/.gradle/
+android/build/
+*.lock
+
+
+# VSCode
+.vscode/
+
+
+# Environment files
+.env
+*.env
+
+
+# MacOS / Linux
+.DS_Store
+*.swp
+*~
+
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.sqlite3
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+
