@@ -10,7 +10,7 @@ class ChatRepository {
   Stream<String> streamChat(List<Message> messages) async* {
     try {
       final response = await dio.post(
-        'http://localhost:8000/chat',
+        'https://ai-q-a-chat-application-1.onrender.com/chat',
         data: {'messages': messages.map((m) => m.toJson()).toList()},
         options: Options(
           responseType: ResponseType.plain, // Use plain for web compatibility
